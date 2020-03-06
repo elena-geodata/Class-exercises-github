@@ -1,0 +1,28 @@
+import math
+def round_up(n, decimals=0):
+    multiplier = 10 ** decimals
+    return math.ceil(n * multiplier) / multiplier
+
+#Exercise 1
+name = input("Please type your name!")
+print("Hello, {}! Nice to meet you!".format(name))
+age = int(input("Please type your age!"))
+tenth =((round_up(age,-1)))
+agedif = tenth-age
+print("{}, in {} years you'll be {}.".format (name,agedif,tenth))
+
+#Exercise 2
+gender = input ("Are you male or female?")
+
+if gender in ["male", "Male"] and (age > 18):
+    print("Mr. {}". format(name))
+elif gender in ["female","Female"] and (age > 18):
+    print ("Mrs. {}". format(name))
+else:
+    print(name)
+
+
+
+
+
+
