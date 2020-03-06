@@ -1,0 +1,17 @@
+#define a function which has a name and is applicable to different lists
+def evenfunction (amazinglist):
+    even_count = 0
+    for num in amazinglist:
+        if num % 2 == 0: #modulus 2 = Rest bei einer Division durch 2 --> muss 0 sein
+            even_count += 1 #take value in even_count and add 1
+    return even_count
+
+#define a list you want to use the function on
+ultraamazinglist = [10,34,123,34,56,43,36]
+
+#call the function and store the results of the function in a variable (t)
+t = evenfunction(ultraamazinglist)
+
+print("Even numbers in the list:", t)
+
+#commit bei going on VCS
